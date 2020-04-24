@@ -50,4 +50,21 @@ containers.addEventListener('click', () => {
 // })
 
 
+// window.addEventListener('scroll', function() {
+//   document.getElementById('scroll').innerHTML = pageYOffset + 'px'
+// })
 
+let nextPage = document.getElementById('nextPage')
+let about = document.getElementById('about')
+
+nextPage.addEventListener('click', function myFunction() {
+  // animate({
+  //   duration: 1000,
+    
+    
+  // })
+  about.scrollIntoView({
+    // block: "center", 
+    behavior: "smooth"
+  })
+})
