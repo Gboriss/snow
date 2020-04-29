@@ -180,7 +180,8 @@ main {
   text-align: center;
   overflow: hidden;
 }
-main div.table {
+
+div.table {
   padding-top: 0;
   min-height: 700px;
   height: 100vh;
@@ -191,7 +192,7 @@ main div.table {
   z-index: 0;
   margin-bottom: 100px;
 }
-main div.table .images {
+div.table .images {
   position: absolute;
   top: 0;
   left: 0;
@@ -201,7 +202,7 @@ main div.table .images {
   background-position: 50% 50%;
   z-index: -1;
 }
-main div.table .img {
+div.table .img {
   background-image: url("/home-7.a79fc17b.jpg");
   position: absolute;
   top: 0;
@@ -211,7 +212,7 @@ main div.table .img {
   background-size: cover;
   background-position: 50% 50%;
 }
-main div.table .background {
+div.table .background {
   background-color: rgba(12, 12, 12, 0.6);
   position: absolute;
   top: 0;
@@ -221,25 +222,25 @@ main div.table .background {
   background-size: cover;
   background-position: 50% 50%;
 }
-main div.table .text-main {
+div.table .text-main {
   max-width: 100%;
   padding: 165px 0;
   pointer-events: none !important;
 }
-main div.table .text-main h2 {
+div.table .text-main h2 {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 2.8px;
 }
-main div.table .text-main h1 {
+div.table .text-main h1 {
   font-family: "Playfair Display";
   color: #fff;
   font-size: 50px;
   font-weight: regular;
   line-height: 1.18;
 }
-main div.table button {
+div.table button {
   display: block;
   position: absolute;
   outline: none;
@@ -261,13 +262,20 @@ main div.table button {
   background: none;
   cursor: pointer;
 }
-main div.table button:hover {
+div.table button:hover {
   opacity: 1;
 }
-main div.table button span.line:before {
+div.table button span.line:before {
   content: "";
 }
-main section.about {
+
+@media (max-width: 720px) {
+  div.table .text-main {
+    width: 340px;
+    margin: auto;
+  }
+}
+section.about {
   position: relative;
   max-width: 100%;
   justify-content: center;
@@ -276,137 +284,47 @@ main section.about {
   margin: auto;
   margin-bottom: 100px;
 }
-main section.about h2 {
+section.about h2 {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   font-weight: 700;
   color: #171717;
 }
-main section.about p {
+section.about p {
   display: block;
   margin-bottom: 30px;
 }
-main div.work-info {
-  margin-bottom: 100px;
-}
-main div.work-info,
-main section.dark-box {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  z-index: 1;
-  height: 100%;
-}
-main div.work-info .patern,
-main section.dark-box .patern {
-  background-position: 50% 50%;
-  background-size: 100%;
-  background-image: url(/bg-pattern.e850ad19.jpg);
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 240px;
-  overflow: hidden;
-  pointer-events: none;
-  visibility: visible;
-}
-main div.work-info div.row,
-main section.dark-box div.row {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-main div.work-info div.row .ibox,
-main section.dark-box div.row .ibox {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main div.work-info div.row .ibox .circle,
-main section.dark-box div.row .ibox .circle {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-start;
-}
-main div.work-info div.row .ibox .circle .ibox-title,
-main section.dark-box div.row .ibox .circle .ibox-title {
-  font-weight: bold;
-  margin-right: auto;
-  margin-bottom: 5px;
-}
-main div.work-info div.row .ibox .portfolio,
-main section.dark-box div.row .ibox .portfolio {
-  font-size: 50px;
-  margin-right: 20px;
-}
-main div.work-info div.row .ibox .portfolio:before,
-main section.dark-box div.row .ibox .portfolio:before {
-  content: "";
-}
-main div.work-info div.row .ibox .clock,
-main section.dark-box div.row .ibox .clock {
-  font-size: 50px;
-  margin-right: 20px;
-}
-main div.work-info div.row .ibox .clock:before,
-main section.dark-box div.row .ibox .clock:before {
-  content: "";
-}
-main div.work-info div.row .ibox .star,
-main section.dark-box div.row .ibox .star {
-  font-size: 50px;
-  margin-right: 20px;
-}
-main div.work-info div.row .ibox .star:before,
-main section.dark-box div.row .ibox .star:before {
-  content: "";
-}
-main div.work-info div.row .ibox .like,
-main section.dark-box div.row .ibox .like {
-  font-size: 50px;
-  margin-right: 20px;
-}
-main div.work-info div.row .ibox .like:before,
-main section.dark-box div.row .ibox .like:before {
-  content: "";
-}
-main section.best-projects {
+
+section.best-projects {
   max-width: 1200px;
   margin: auto;
   margin-bottom: 80px;
 }
-main section.best-projects h2 {
+section.best-projects h2 {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   font-weight: 700;
   color: #171717;
 }
-main section.best-projects p {
+section.best-projects p {
   margin-bottom: 60px;
 }
-main section.best-projects .portfolio {
+section.best-projects .portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-main section.best-projects .portfolio .art {
+section.best-projects .portfolio .art {
   height: 360px;
   width: 360px;
 }
-main section.best-projects .portfolio .art div.square {
+section.best-projects .portfolio .art div.square {
   position: relative;
   overflow: hidden;
   height: 360px;
   width: 360px;
 }
-main section.best-projects .portfolio .art div.square img {
+section.best-projects .portfolio .art div.square img {
   position: absolute;
   top: 0;
   left: 0;
@@ -414,8 +332,9 @@ main section.best-projects .portfolio .art div.square img {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  pointer-events: none;
 }
-main section.best-projects .portfolio .art div.square .back-color {
+section.best-projects .portfolio .art div.square .back-color {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -430,58 +349,98 @@ main section.best-projects .portfolio .art div.square .back-color {
   transition: opacity 0.5s, background-color 0.5s;
   cursor: pointer;
 }
-main section.best-projects .portfolio .art div.square .back-color:hover {
+section.best-projects .portfolio .art div.square .back-color:hover {
   opacity: 1;
 }
-main section.best-projects .portfolio .art div.square .back-color h2 {
+section.best-projects .portfolio .art div.square .back-color h2 {
   font-size: 30px;
 }
-main section.best-projects .portfolio .art div.square .back-color p {
+section.best-projects .portfolio .art div.square .back-color p {
   text-transform: uppercase;
 }
-main section.best-projects .portfolio .art div.square .back-color h2, main section.best-projects .portfolio .art div.square .back-color p {
+section.best-projects .portfolio .art div.square .back-color h2, section.best-projects .portfolio .art div.square .back-color p {
   user-select: none;
   color: #fff;
   transition: opacity 0.5s, background-color 0.5s;
 }
-main section.best-projects .portfolio .art div.square .back-color h2:hover, main section.best-projects .portfolio .art div.square .back-color p:hover {
+section.best-projects .portfolio .art div.square .back-color h2:hover, section.best-projects .portfolio .art div.square .back-color p:hover {
   opacity: 1;
 }
-main section.dark-box {
-  margin-bottom: 40px;
+
+div.work-info {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  margin-bottom: 100px;
 }
-main section.dark-box .patern {
-  height: 350px;
+div.work-info .patern {
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-image: url(/bg-pattern.e850ad19.jpg);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: visible;
 }
-main section.dark-box .row .box {
-  display: none;
-  flex-direction: column;
-  max-width: 715px;
-  margin: auto;
-  color: #fff;
-}
-main section.dark-box .row p {
-  font-family: "Playfair Display";
-  font-size: 1.685rem;
-  line-height: 1.45;
-  margin-bottom: 1.15rem;
-  text-align: center;
-  font-style: italic;
-}
-main section.dark-box .row .navigation-slider {
-  display: flex;
+div.work-info div.row {
   position: absolute;
-  top: 300px;
-  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-main section.dark-box .row .navigation-slider label {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin-right: 22px;
-  vertical-align: top;
-  background-image: url("/radio-off.22bc3348.svg");
-  cursor: pointer;
+div.work-info div.row .ibox {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.work-info div.row .ibox .circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+div.work-info div.row .ibox .circle .ibox-title {
+  font-weight: bold;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+div.work-info div.row .ibox .portfolio {
+  font-size: 50px;
+  margin-right: 20px;
+}
+div.work-info div.row .ibox .portfolio:before {
+  content: "";
+}
+div.work-info div.row .ibox .clock {
+  font-size: 50px;
+  margin-right: 20px;
+}
+div.work-info div.row .ibox .clock:before {
+  content: "";
+}
+div.work-info div.row .ibox .star {
+  font-size: 50px;
+  margin-right: 20px;
+}
+div.work-info div.row .ibox .star:before {
+  content: "";
+}
+div.work-info div.row .ibox .like {
+  font-size: 50px;
+  margin-right: 20px;
+}
+div.work-info div.row .ibox .like:before {
+  content: "";
 }
 
 @media (max-width: 720px) {
@@ -497,46 +456,105 @@ main section.dark-box .row .navigation-slider label {
     margin-right: auto;
   }
 }
-.visually-hidden {
-  display: none;
-}
-
-#product-1:checked ~ .row #dark-1,
-#product-2:checked ~ .row #dark-2,
-#product-3:checked ~ .row #dark-3 {
-  display: flex;
-}
-
-#product-1:checked ~ .row label[for=product-1],
-#product-2:checked ~ .row label[for=product-2],
-#product-3:checked ~ .row label[for=product-3] {
-  background-image: url("/radio-on.f5bfaef2.svg");
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-}
-.logo .img-logo {
-  height: 180px;
-  width: 180px;
-}
-
-.img-logo {
+.main-carousel {
   position: relative;
+  display: block;
   overflow: hidden;
+  background-color: #252525;
+  background-image: url(/bg-pattern.e850ad19.jpg);
+  margin: auto;
+  padding: 0;
+  height: 400px;
 }
-.img-logo img {
+.main-carousel li.slide {
+  width: 100vw;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+.main-carousel p {
+  display: block;
+  font-family: "Playfair Display";
+  font-size: 1.55rem;
+  line-height: 1.45;
+  margin-bottom: 25px;
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+  width: 750px;
+  margin-top: 80px;
+}
+.main-carousel h3 {
+  color: #fff;
+  font-size: 15px;
+}
+.main-carousel .flickity-page-dots {
+  bottom: 20px;
+}
+.main-carousel .flickity-page-dots li {
+  background-color: #fafafa;
+}
+
+@media (max-width: 720px) {
+  .main-carousel {
+    height: 300px;
+  }
+  .main-carousel p {
+    margin-top: 50px;
+    font-size: 1.1rem;
+    line-height: 1.25;
+    margin-bottom: 25px;
+    color: #fff;
+    width: 350px;
+  }
+}
+.logo-carousel {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  padding: 0;
+  width: 1200px;
+}
+.logo-carousel:after {
+  content: "";
   position: absolute;
   top: 0;
+  bottom: 0;
+  left: 1100px;
+  right: 0;
+  background: linear-gradient(to left, #FFF, transparent);
+  z-index: 1;
+}
+.logo-carousel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1100px;
   left: 0;
-  width: 100%;
-  object-fit: cover;
+  background: linear-gradient(to right, #FFF, transparent);
+  z-index: 1;
+}
+.logo-carousel img {
+  width: 170px;
+  height: 105px;
+  padding: 25px;
 }
 
+@media (max-width: 720px) {
+  .logo-carousel {
+    width: 100vw;
+  }
+  .logo-carousel img {
+    width: 90px;
+    height: 75px;
+    padding: 13px;
+  }
+}
 section.blog {
   display: flex;
   flex-direction: column;
@@ -553,33 +571,37 @@ section.blog h2 {
   margin-bottom: 1.15rem;
   text-align: center;
 }
-section.blog .text-p {
+section.blog .text {
   width: 720px;
   max-width: 100%;
   margin: auto;
   margin-bottom: 50px;
 }
 section.blog .container {
-  display: flex;
-  justify-content: center;
   margin: auto;
-  width: 700px;
+  width: 100%;
   height: 440px;
 }
 section.blog .container .post {
-  display: none;
   flex-direction: column;
-  flex-basis: 33%;
-  margin: 20px;
   background-color: #fff;
+  width: 30%;
+  margin-left: 50px;
 }
 section.blog .container .post .img-logo {
   height: 220px;
-  width: 340px;
+  display: block;
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
 }
 section.blog .container .post .img-logo img {
   transition: opacity 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
 }
 section.blog .container .post .img-logo img:hover {
   opacity: 0.5;
@@ -630,113 +652,143 @@ section.blog .container .navigation label {
   cursor: pointer;
 }
 
-.visually {
-  display: none;
+@media (max-width: 2000px) {
+  section.blog .container {
+    width: 1200px;
+  }
+  section.blog .flickity-page-dots {
+    bottom: -40px;
+  }
 }
-
-#blog-1:checked ~ .container #post-1,
-#blog-1:checked ~ .container #post-2,
-#blog-1:checked ~ .container #post-3,
-#blog-2:checked ~ .container #post-2,
-#blog-2:checked ~ .container #post-3,
-#blog-2:checked ~ .container #post-4,
-#blog-3:checked ~ .container #post-3,
-#blog-3:checked ~ .container #post-4,
-#blog-3:checked ~ .container #post-5,
-#blog-4:checked ~ .container #post-4,
-#blog-4:checked ~ .container #post-5,
-#blog-4:checked ~ .container #post-1,
-#blog-5:checked ~ .container #post-5,
-#blog-5:checked ~ .container #post-1,
-#blog-5:checked ~ .container #post-2 {
-  display: flex;
+@media (max-width: 1200px) {
+  section.blog .container {
+    width: 800px;
+  }
+  section.blog .flickity-page-dots {
+    bottom: -70px;
+  }
 }
-
-#blog-1:checked ~ .container label[for=blog-1],
-#blog-2:checked ~ .container label[for=blog-2],
-#blog-3:checked ~ .container label[for=blog-3],
-#blog-4:checked ~ .container label[for=blog-4],
-#blog-5:checked ~ .container label[for=blog-5] {
-  background-image: url("/radio-on.f5bfaef2.svg");
+@media (max-width: 800px) {
+  section.blog .text {
+    width: 320px;
+  }
+  section.blog .container {
+    width: 400px;
+  }
+  section.blog .container .post {
+    max-width: 100vh;
+    width: 90%;
+    margin: auto;
+    margin-left: 20px;
+  }
+  section.blog .container .flickity-page-dots {
+    bottom: 0;
+  }
 }
-
-.index-columns {
+footer.index-columns {
   display: flex;
   padding-top: 50px;
   background-color: #f6f6f6;
   max-width: 100%;
   padding-bottom: 150px;
 }
-.index-columns .col {
+footer.index-columns .col {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 1200px;
-  max-width: 100%;
   margin: auto;
   margin-top: 50px;
 }
-.index-columns .col .contacts {
+footer.index-columns .col .contacts {
   flex-basis: 50%;
 }
-.index-columns .col h2 {
+footer.index-columns .col h2 {
   font-size: 2.6rem;
-  font-family: Playfair Display, serif;
+  font-family: "Playfair Display", serif;
   color: #171717;
   font-weight: 700;
   margin-bottom: 30px;
   margin: 0;
   padding: 0;
 }
-.index-columns .col .footer-contacts {
-  width: 450px;
+footer.index-columns .col p.footer-contacts {
+  min-width: 300px;
+  max-width: 100%;
+  pointer-events: none !important;
 }
-.index-columns .col ul {
+footer.index-columns .col ul {
   margin: 0;
   padding: 0;
 }
-.index-columns .col ul li {
+footer.index-columns .col ul li {
   padding-bottom: 10px;
 }
-.index-columns .col .appointment-form {
-  display: flex;
-  flex-basis: 50%;
-  flex-wrap: wrap;
+
+form.appointment-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 50px;
+  gap: 20px;
 }
-.index-columns .col .appointment-form #appointment-name {
-  max-width: 220px;
-  width: 220px;
-  margin-right: 80px;
+form.appointment-form input:nth-child(3) {
+  grid-column: 1/span 2;
 }
-.index-columns .col .appointment-form #appointment-mail {
-  max-width: 220px;
-  width: 220px;
+form.appointment-form textarea {
+  grid-column: 1/span 2;
 }
-.index-columns .col .appointment-form #appointment-item {
-  max-width: 590px;
-  width: 520px;
-}
-.index-columns .col .appointment-form #appointment-comment {
-  max-width: 590px;
-  width: 520px;
-}
-.index-columns .col .appointment-form .appointment-item {
-  margin: 0;
-  margin-bottom: 10px;
-}
-.index-columns .col .appointment-form .appointment-item input {
-  width: 100%;
-  padding: 16px 22px;
+form.appointment-form input,
+form.appointment-form textarea {
+  padding: 8px 22px;
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.2;
   background-color: #fff;
   border: none;
   border-radius: 0;
-  font: inherit;
 }
-.index-columns .col .appointment-form button {
+form.appointment-form button {
   display: block;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  padding: 18px 25px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  background-color: #252525;
+}
+
+@media (max-width: 720px) {
+  .index-columns {
+    margin: auto;
+  }
+  .index-columns .index-columns .col {
+    justify-content: left;
+    margin-left: 10px;
+  }
+
+  form.appointment-form {
+    grid-template-columns: 150px 150px;
+  }
+  form.appointment-form input,
+form.appointment-form textarea {
+    padding: 2px 4px;
+  }
+}
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
 }
 
 /*# sourceMappingURL=/main.3a106136.css.map */

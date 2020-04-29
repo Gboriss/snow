@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "flickity": "^2.2.1",
+    "install": "^0.13.0",
+    "jquery": "^3.5.0",
+    "owl.carousel": "^2.3.4",
     "parcel": "^1.12.4"
   },
   "devDependencies": {

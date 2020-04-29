@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snow</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/variables.1a38b8cb.css">
     <link rel="stylesheet" href="/main.3a106136.css">
 <script src="/variables.1a38b8cb.js"></script><script src="/main.3a106136.js"></script></head>
@@ -22,16 +23,11 @@
                     <li> <a href="/index.html#portfolio">Portfolio</a></li>
                     <li> <a href="/index.html#blog">Blog</a></li>
                 </ul>    
-                <!-- <div class="bars"> -->
-                    <div class="containers" id="containers">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    <!-- </div> -->
-
+                <div class="containers" id="containers">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div> 
                 </div>
-                
-
             </div>
         </nav>
     </header>
@@ -208,74 +204,54 @@
             </div>
         </section>
 
-        <section class="dark-box">
-            <div class="patern"></div>
-            <input class="visually-hidden" type="radio" id="product-1" name="slider-toggle" checked="">
-			<input class="visually-hidden" type="radio" id="product-2" name="slider-toggle">
-			<input class="visually-hidden" type="radio" id="product-3" name="slider-toggle">
-            <div class="row">
-                <div class="box" id="dark-1">
-                    <p>
-                        "Outstanding job and exceeded all expectations. It was 
-                        a pleasure to work with them on a sizable first project 
-                        and am looking forward to start the next one asap."
-                    </p>
-                    <cite>Michael Hopkins</cite>
-                </div>
-                <div class="box" id="dark-2">
-                    <p>
-                        "Outstanding job and exceeded all expectations. It was 
-                         the next one asap."
-                    </p>
-                    <cite>Michael Hopkins</cite>
-                </div>
-                <div class="box" id="dark-3">
-                    <p>
-                        "on a sizable first project 
-                        and am looking forward to start the next one asap."
-                    </p>
-                    <cite>Michael Hopkins</cite>
-                </div>
-                <div class="navigation-slider">
-                    <label for="product-1"><span class="visually-hidden"></span></label>
-                    <label for="product-2"><span class="visually-hidden"></span></label>
-                    <label for="product-3"><span class="visually-hidden"></span></label>
-                </div>
-            </div>
-        </section>
+        <ul class="main-carousel">
+            <li class="slide">
+                <p>
+                    "Outstanding job and exceeded all expectations. It was 
+                    a pleasure to work with them on a sizable first project 
+                    and am looking forward to start the next one asap."
+                </p>
+                <h3>Michael Hopkins</h3>
+            </li>
+            <li class="slide">
+                <p>
+                    "Outstanding job and exceeded all expectations. It was 
+                    a pleasure to work with them on a sizable first project 
+                    and am looking forward to start the next one asap."
+                </p>
+                <h3>Michael Hopkins</h3>
+            </li>
+            <li class="slide">
+                <p>
+                    "Outstanding job and exceeded all expectations. It was 
+                    a pleasure to work with them on a sizable first project 
+                    and am looking forward to start the next one asap."
+                </p>
+                <h3>Michael Hopkins</h3>
+            </li>
+        </ul>
+        
 
-        <div class="logo">
-            <div class="img-logo">
-                <img src="/partner-logo-7-dark.be18e290.png">
-            </div>
-            <div class="img-logo">
-                <img src="/partner-logo-8-dark.c2b88eeb.png">
-            </div>
-            <div class="img-logo">
-                <img src="/partner-logo-1-dark.69d69447.png">
-            </div>
-            <div class="img-logo">
-                <img src="/partner-logo-2-dark.b1e11d2b.png">
-            </div>
-            <div class="img-logo">
-                <img src="/partner-logo-3-dark.00330564.png">
-            </div>
+        <div class="logo-carousel">
+            <img src="/partner-logo-7-dark.be18e290.png">
+            <img src="/partner-logo-8-dark.c2b88eeb.png">
+            <img src="/partner-logo-1-dark.69d69447.png">
+            <img src="/partner-logo-2-dark.b1e11d2b.png">
+            <img src="/partner-logo-3-dark.00330564.png">
+            <img src="/partner-logo-4-dark.f6b48988.png">
+            <img src="/partner-logo-5-dark.84d7cfc0.png">
+            <img src="/partner-logo-6-dark.9593e9ee.png">
         </div>
 
         <section class="blog">
             <h2>Latest Blog</h2>
-            <p class="text-p">
+            <p class="text">
                 Donec orci sem, pretium ac dolor et, faucibus faucibus mauris. 
                 Etiam,pellentesque faucibus. Vestibulum gravida volutpat ipsum 
                 non ultrices.
             </p>
-            <input class="visually" type="radio" id="blog-1" name="slider" checked="">
-			<input class="visually" type="radio" id="blog-2" name="slider">
-            <input class="visually" type="radio" id="blog-3" name="slider">
-            <input class="visually" type="radio" id="blog-4" name="slider">
-            <input class="visually" type="radio" id="blog-5" name="slider">
-            <div class="container">
-                <div class="blog-post-1 post" id="post-1">
+            <div class="container blog-carousel">
+                <div class="post">
                     <div class="img-logo">
                         <img src="/post-1-mid.1e68a438.jpg">
                         <button>nature</button>
@@ -289,7 +265,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="blog-post-3  post" id="post-2">
+                <div class="post">
                     <div class="img-logo">
                         <img src="/post-3-mid.e3316285.jpg">
                         <button>nature</button>
@@ -303,7 +279,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="blog-post-4  post" id="post-3">
+                <div class="post">
                     <div class="img-logo">
                         <img src="/post-4-mid.fd8edb3f.jpg">
                         <button>branding</button>
@@ -317,7 +293,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="blog-post-5  post" id="post-4">
+                <div class="post">
                     <div class="img-logo">
                         <img src="/post-5-mid.59aaf576.jpg">
                         <button>design</button>
@@ -331,7 +307,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="blog-post-6  post" id="post-5">
+                <div class="post">
                     <div class="img-logo">
                         <img src="/post-6-mid.7e2b5291.jpg">
                         <button>design</button>
@@ -345,19 +321,13 @@
                         </p>
                     </div>
                 </div>
-               
-                <div class="navigation">
-                    <label for="blog-1"><span class="visually"></span></label>
-                    <label for="blog-2"><span class="visually"></span></label>
-                    <label for="blog-3"><span class="visually"></span></label>
-                    <label for="blog-4"><span class="visually"></span></label>
-                    <label for="blog-5"><span class="visually"></span></label>
-                </div>
+    
             </div>
         </section>
     </main>
-    
-    <!-- <footer class="index-columns">
+
+
+    <footer class="index-columns">
         <div class="col">
             <section class="contacts">
                 <h2>Contact Info:</h2>
@@ -375,29 +345,16 @@
                 </ul>
             </section>
         
-            
-                 <form class="appointment-form" method="post">
-                    <p class="appointment-item" id="appointment-name">
-                        <label for="appointment-name"></label>
-                        <input id="appointment-name" type="text" name="name" value="" placeholder="Your name">
-                    </p>
-                    <p class="appointment-item" id="appointment-mail">
-                        <label for="appointment-mail"></label>
-                        <input id="appointment-mail" type="text" name="mail" value="" placeholder="Your Email">
-                    </p>
-                    <p class="appointment-item" id="appointment-item">
-                        <label for="appointment-item"></label>
-                        <input id="appointment-item" type="text" name="title" value="" placeholder="Your title">
-                    </p>
-                    <p class="appointment-item" id="appointment-comment">
-                        <label for="appointment-comment"></label>
-                        <input id="appointment-comment" type="text" name="comment" value="" placeholder="Your comment">
-                    </p>
-                    <button class="button" type="submit">Отправить</button>
-                </form>
+            <form class="appointment-form" method="post">
+                <input class="name" type="text" name="name" value="" placeholder="Your name">
+                <input class="mail" type="text" name="mail" value="" placeholder="Your Email">
+                <input class="title" type="text" name="title" value="" placeholder="Your title">
+                <textarea class="comment" name="comment" value="">
+                </textarea><button class="button" type="submit">Отправить</button>
+            </form>
         
         </div>
-    </footer> -->
+    </footer>
     <script src="/main.1e43358e.js"></script>
 </body>
 </html>

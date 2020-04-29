@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"C:/Users/Xiaomi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/styles/variables.scss":[function(require,module,exports) {
+},{"./bundle-url":"C:/Users/Xiaomi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"D:\\__web\\snow\\assets\\fonts\\work-sans\\work-sans-v7-latin-regular.woff":[["work-sans-v7-latin-regular.730f0e69.woff","assets/fonts/work-sans/work-sans-v7-latin-regular.woff"],"assets/fonts/work-sans/work-sans-v7-latin-regular.woff"],"D:\\__web\\snow\\assets\\fonts\\work-sans\\work-sans-v7-latin-regular.woff2":[["work-sans-v7-latin-regular.982a225a.woff2","assets/fonts/work-sans/work-sans-v7-latin-regular.woff2"],"assets/fonts/work-sans/work-sans-v7-latin-regular.woff2"],"D:\\__web\\snow\\assets\\fonts\\playfair-display\\playfair-display-v20-latin-regular.woff":[["playfair-display-v20-latin-regular.69a7da8d.woff","assets/fonts/playfair-display/playfair-display-v20-latin-regular.woff"],"assets/fonts/playfair-display/playfair-display-v20-latin-regular.woff"],"D:\\__web\\snow\\assets\\fonts\\playfair-display\\playfair-display-v20-latin-regular.woff2":[["playfair-display-v20-latin-regular.37677c29.woff2","assets/fonts/playfair-display/playfair-display-v20-latin-regular.woff2"],"assets/fonts/playfair-display/playfair-display-v20-latin-regular.woff2"],"D:\\__web\\snow\\assets\\fonts\\icon\\Pe-icon-7-stroke.woff":[["Pe-icon-7-stroke.78ae2c5e.woff","assets/fonts/icon/Pe-icon-7-stroke.woff"],"assets/fonts/icon/Pe-icon-7-stroke.woff"],"_css_loader":"C:/Users/Xiaomi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/Xiaomi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./owl.video.play.png":[["owl.video.play.72fb3377.png","OwlCarousel2-2.3.4/dist/assets/owl.video.play.png"],"OwlCarousel2-2.3.4/dist/assets/owl.video.play.png"],"_css_loader":"C:/Users/Xiaomi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"C:/Users/Xiaomi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52965" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57774" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -394,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["C:/Users/Xiaomi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/variables.1a38b8cb.js.map
+//# sourceMappingURL=/owl.carousel.min.f7f00cf3.js.map
