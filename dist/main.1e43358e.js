@@ -4069,29 +4069,82 @@ var blogCarousel = new _flickity.default('.blog-carousel', {
   prevNextButtons: false // groupCells: true,
   // groupCells: 3,
 
-});
-var ar = [2, 3, 7, 4, 6, 1, 5, 8, 9]; // ar = [2, 1, 3, 4, 6, 5, 7, 8, 9]
+}); // for (let input of inputs) {
+//   input.addEventListener('blur', function() {
+//     let rule = this.name
+//     let value = this.value
+//     let check
+//     switch (rule) {
+//       case 'name':
+//         check = /^\d+$/.test(value)
+//       break;
+//       case 'mail':
+//       break;
+//       case 'title':
+//       break;
+//     }
+//     this.classList.remove('valid')
+//     this.classList.remove('invalid')
+//     if (check) {
+//       this.classList.add('valid')
+//     } else {
+//       this.classList.add('invalid')
+//     }
+//   })
+// }
 
-sortOdd(ar); // function sortOdd(ar) {
-//   let sortNumbers = ar.filter(x => x % 2).sort((a, b) => a - b)
-//   console.log(sortNumbers)
-//   let i = 0
-//   return ar.map(x => x % 2 ? sortNumbers[i++] : x)
-// }
-// console.log(sortOdd(ar))
-// const arr = [1, 4, 8, 7, 3, 6, 9, 2, 5]
-// function sortOdd(arr) {
-//   let sortNumbers = arr.filter(x => x % 2 == 0).sort((a, b) => a - b)
-//   console.log(sortNumbers)
-//   let i = 0
-//   return arr.map(x => x % 2 == 0 ? sortNumbers[i++] : x)
-// }
-// console.log(sortOdd(arr))
-// const inputSTR = 'AAAABBBCCXYZDDDDEEEFFFAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB'
-// function rle(str) {
-//   let string = ''
-//   let  
-// }
+var form = document.getElementById('form');
+var name = document.getElementById('name');
+var title = document.getElementById('title');
+var mail = document.getElementById('mail');
+var textarea = document.getElementById('textarea');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  checkInputs();
+});
+
+function checkInputs() {
+  var nameValue = name.value.trim();
+  var titleValue = title.value.trim();
+  var mailValue = mail.value.trim();
+  var textareaValue = textarea.value.trim();
+
+  if (nameValue === '') {
+    setErrorFor(name);
+  } else {
+    setSuccessFor(name);
+  }
+
+  if (titleValue === '') {
+    setErrorFor(title);
+  } else {
+    setSuccessFor(title);
+  }
+
+  if (textareaValue === '') {
+    setErrorFor(textarea);
+  } else {
+    setSuccessFor(textarea);
+  }
+
+  var atDot = mailValue.match(/^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i);
+
+  if (!atDot) {
+    setErrorFor(mail);
+  } else {
+    setSuccessFor(mail);
+  }
+}
+
+function setErrorFor(input) {
+  var formControl = input;
+  formControl.className = 'invalid';
+}
+
+function setSuccessFor(input) {
+  var formControl = input;
+  formControl.className = 'valid';
+}
 },{"flickity":"node_modules/flickity/js/index.js"}],"C:/Users/Xiaomi/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -4120,7 +4173,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52965" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50679" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

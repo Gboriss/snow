@@ -326,8 +326,7 @@
         </section>
     </main>
 
-
-    <footer class="index-columns">
+    <footer>
         <div class="col">
             <section class="contacts">
                 <h2>Contact Info:</h2>
@@ -345,12 +344,12 @@
                 </ul>
             </section>
         
-            <form class="appointment-form" method="post">
-                <input class="name" type="text" name="name" value="" placeholder="Your name">
-                <input class="mail" type="text" name="mail" value="" placeholder="Your Email">
-                <input class="title" type="text" name="title" value="" placeholder="Your title">
-                <textarea class="comment" name="comment" value="">
-                <button class="button" type="submit">Отправить</button>
+            <form method="post" id="form">
+                <input type="text" name="name" id="name" value="" placeholder="Your name">
+                <input type="text" name="mail" id="mail" value="" placeholder="Your Email">
+                <input type="text" name="title" id="title" value="" placeholder="Your title">
+                <textarea name="comment" id="textarea" value="">
+                <button type="submit" onsubmit='return validate()'>Отправить</button>    
             </form>
         
         </div>
