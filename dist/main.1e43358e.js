@@ -4098,6 +4098,7 @@ var name = document.getElementById('name');
 var title = document.getElementById('title');
 var mail = document.getElementById('mail');
 var textarea = document.getElementById('textarea');
+var button = document.getElementById('button');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
   checkInputs();
@@ -4133,6 +4134,10 @@ function checkInputs() {
     setErrorFor(mail);
   } else {
     setSuccessFor(mail);
+  }
+
+  if (nameValue === '' || titleValue === '' || textareaValue === '' || !atDot) {
+    button.className = 'active';
   }
 }
 
@@ -4173,7 +4178,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50679" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58157" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -758,6 +758,7 @@ form textarea {
   border: none;
   border-radius: 0;
   box-sizing: border-box;
+  outline: none;
 }
 form button {
   display: block;
@@ -795,6 +796,11 @@ form textarea {
     padding: 2px 4px;
   }
 }
+.active {
+  pointer-events: visible;
+  opacity: 1;
+}
+
 .valid {
   border: 1px solid green;
 }

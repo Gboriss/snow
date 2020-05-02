@@ -869,6 +869,7 @@ form {
         border: none;
         border-radius: 0;
         box-sizing: border-box;
+        outline:none
         
     }
     
@@ -880,7 +881,7 @@ form {
         display: inline-block;
         border: 0;
         padding: 18px 25px;
-        // font-size: .96rem;
+    
         font-weight: 500;
         line-height: 1.2;
         text-align: center;
@@ -890,6 +891,9 @@ form {
         text-transform: uppercase;
         transition: all .5s;
         background-color: #252525;
+
+        // pointer-events: none;
+        // opacity: 0.5;
     }
 }
 
@@ -910,7 +914,10 @@ form {
         }
     }
 }
-
+.active {
+    pointer-events: visible;
+    opacity: 1;
+}
 .valid {
     border: 1px solid green;
 }

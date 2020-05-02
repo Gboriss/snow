@@ -125,6 +125,7 @@ let name = document.getElementById('name')
 let title = document.getElementById('title')
 let mail = document.getElementById('mail')
 let textarea = document.getElementById('textarea')
+let button = document.getElementById('button')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
@@ -161,6 +162,11 @@ function checkInputs() {
   } else {
     setSuccessFor(mail)
   }
+
+  if (nameValue === '' || titleValue === '' || textareaValue === '' || !atDot) {
+    button.className = 'active'
+  }
+
 }
 
 function setErrorFor(input) {
