@@ -4,7 +4,7 @@
     "install": "^0.13.0",
     "jquery": "^3.5.0",
     "owl.carousel": "^2.3.4",
-    "parcel": "^1.12.4"
+    "parcel": "^2.8.2"
   },
   "devDependencies": {
     "sass": "^1.26.3"
